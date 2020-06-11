@@ -1,6 +1,6 @@
 # Store Distance Calculator
 
-[![Build Status](https://travis-ci.org/meshcode/store-distance-calculator.svg?branch=master)](https://travis-ci.org/meshcode/store-distance-calculator)
+[![Build Status](https://travis-ci.org/meshcode/bitcoin-address-spoof-tests.svg?branch=master)](https://travis-ci.org/meshcode/bitcoin-address-spoof-tests)
 
 A test for bitcoin address spoofing: Java HTTP server deploys an HTML webpage with a CSS DIV element containing a bitcoin address. Testing to see if a man-in-the-middle attack may have swapped the address for another.
 ## Contents
