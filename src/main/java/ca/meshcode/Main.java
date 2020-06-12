@@ -1,9 +1,6 @@
-//main package
 package ca.meshcode;
 
-//main class
 public class Main {
-
     public static void main(String[] args) {
         //create an HTTP Server with unique name
         //this is a call to the HTTPServer class in this package
@@ -14,5 +11,3 @@ public class Main {
         freshHTTPServer.start();
     }
 }
-
-

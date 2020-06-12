@@ -5,7 +5,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/java/Features",
-        glue = "Steps",
+        glue = "Acceptance",
         plugin = { "pretty", "html:target/cucumber" },
         junit = "--step-notifications"
 )
