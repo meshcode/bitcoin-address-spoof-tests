@@ -37,8 +37,8 @@ Run automated Selenium Webdriver tests:
 ## Tools
 
 ###### App Code and Scripting
-  - [Cucumber](https://www.jetbrains.com/idea/) - IntelliJ IDE for Java projects
-  - [Cucumber](https://www.kali.org/downloads/) - Kali Linux
+  - [IntelliJ](https://www.jetbrains.com/idea/) - IntelliJ IDE for Java projects
+  - [Kali Linux](https://www.kali.org/downloads/) - Kali Linux
   - [Visual Studio](https://code.visualstudio.com/) - Visual Studio - hand coded HTML
 
 ###### Acceptance and Penetration Tests
