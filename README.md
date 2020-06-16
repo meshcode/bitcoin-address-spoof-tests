@@ -49,24 +49,24 @@ Run automated Selenium Webdriver tests:
   - [Wireshark](https://www.wireshark.org/) - Packet analyzer
     
 ## Screenshots  
-  
-  ###### Browser window with served HTML page (correct BTC address)
+ 
+  ##### Browser window with served HTML page (correct BTC address):
   ![App OK](https://i.imgur.com/EUz1tTe.png)
   
-  ###### Selenium Webdriver (Cucumber / Gherkin) test process within IntelliJ (correct BTC address)
+  ##### Selenium Webdriver (Cucumber / Gherkin) test process within IntelliJ (correct BTC address):
   ![Test OK](https://i.imgur.com/1Un6JVr.png)
   
-  ###### Kali Linux attack with Bettercap perpetrator and Wireshark analyzer
+  ##### Kali Linux attack with Bettercap perpetrator and Wireshark analyzer:
   ![Attack](https://i.imgur.com/xM58zJB.png)
   
-  ###### Main app window (spoofed BTC address)
+  ##### Main app window (spoofed BTC address):
   ![App NOT OK](https://i.imgur.com/lhbditH.png)
   
-  ######  Selenium Webdriver (Cucumber / Gherkin) test process within IntelliJ (spoofed BTC address)
+  #####  Selenium Webdriver (Cucumber / Gherkin) test process within IntelliJ (spoofed BTC address):
   ![Test NOT OK](https://i.imgur.com/P1EanyS.png)
 
-#Report
-##Web Application Security for bitcoin wallet address
+## Report
+###Web Application Security for bitcoin wallet address
 Exploiting the psychological vulnerability of trust through an alphanumeric bitcoin wallet address on a webpage. 
 
 ####Context:
