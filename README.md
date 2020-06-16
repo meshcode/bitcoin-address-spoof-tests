@@ -65,8 +65,8 @@ Run automated Selenium Webdriver tests:
   ##### Selenium Webdriver (Cucumber / Gherkin) test process within IntelliJ (spoofed BTC address):
   ![Test NOT OK](https://i.imgur.com/P1EanyS.png)
 
-## Report
-### Web Application Security for bitcoin wallet address
+# Report
+## Web Application Security for bitcoin wallet address
 Exploiting the psychological vulnerability of trust through an alphanumeric bitcoin wallet address on a webpage. 
 
 #### Context:
@@ -104,7 +104,7 @@ Black-box, non-functional, systems-integrations offensive attack testing reliabi
 #### Toolkit:
 IntelliJ IDE with Maven for the Project Object Model assistance and ease of compiling. Selenium Webdriver is run from within. For the attack, a custom Kali Linux package built on preinstalled modules.
 
-### Planning the Tests
+## Planning the Tests
 
 Exploiting the possibility of a bitcoin address spoof in a simple HTML web application. The focus is on networking elements which are known to have vulnerabilities which may affect the desired financial sovereignty product, in this case a public bitcoin wallet address.
 
