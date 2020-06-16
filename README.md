@@ -62,49 +62,49 @@ Run automated Selenium Webdriver tests:
   ##### Main app window (spoofed BTC address):
   ![App NOT OK](https://i.imgur.com/lhbditH.png)
   
-  #####  Selenium Webdriver (Cucumber / Gherkin) test process within IntelliJ (spoofed BTC address):
+  ##### Selenium Webdriver (Cucumber / Gherkin) test process within IntelliJ (spoofed BTC address):
   ![Test NOT OK](https://i.imgur.com/P1EanyS.png)
 
 ## Report
-###Web Application Security for bitcoin wallet address
+### Web Application Security for bitcoin wallet address
 Exploiting the psychological vulnerability of trust through an alphanumeric bitcoin wallet address on a webpage. 
 
-####Context:
+#### Context:
 Personal financial sovereignty, security and technologies.
 
-####Delivery Model:
+#### Delivery Model:
 A Windows 10 machine contains a VirtualBox environment with a Kali Linux instance (HACKER) and a Windows 10 instance (VICTIM) using the same NAT (Network Address Translation) network to test the vulnerability of bitcoin wallet address replacement using live ARP (address reolution protocol) spoofing with an HTTP proxy.
 
-####Collaboration:
+#### Collaboration:
 Self-Scrumming-Agility. No collaboration, except the sources of wisdom in available technologies, due to complexity of learning everything from scratch.
 
-####Sources of Risk:
+#### Sources of Risk:
 This is a demonstaration of the popular lack of psychological and technological knowledge regarding trust in web application usage.
 
-####Risk:
+#### Risk:
 The loss of monetary funds of a trusting person wishing to transfer cryptocurrency. A public cryptocurrency wallet address is where one can receive payments. If this is given to a potential client without a verification process then the address itself should not be trusted due to ease of a MITM attack.
 
 Testing strategy:
 Simulate victim and client with virtual machines on the same network.
 
-##Preparing for Test Planning
+## Preparing for Test Planning
 
-####See the Process:
+#### See the Process:
 Monitoring the plans based on set aims. Prioritizing simplicity due to budget and few days time. Aim is simply to alter a public bitcoin address by means of a brief hack of a webpage.
 
-####Material on which to design the tests:
+#### Material on which to design the tests:
 The psychology of the lack of understanding of security in popular technologies.
 
-####Select a testing technique:
+#### Select a testing technique:
 A basic MITM attack based on specifications.
 
-####Type and Level of testing:
+#### Type and Level of testing:
 Black-box, non-functional, systems-integrations offensive attack testing reliability of visual information. An MITM attack on select transmitted content between a server and client. Replacing HTTP data in packets when it is HTML.
 
-####Toolkit:
+#### Toolkit:
 IntelliJ IDE with Maven for the Project Object Model assistance and ease of compiling. Selenium Webdriver is run from within. For the attack, a custom Kali Linux package built on preinstalled modules.
 
-###Planning the Tests
+### Planning the Tests
 
 Exploiting the possibility of a bitcoin address spoof in a simple HTML web application. The focus is on networking elements which are known to have vulnerabilities which may affect the desired financial sovereignty product, in this case a public bitcoin wallet address.
 
@@ -113,7 +113,7 @@ Spoofing ARP tables (address resolution protocol) to have victim and router beli
 VICTIM COMPUTER is a user who trusts the visible public bitcoin address on the website. 
 HACKER COMPUTER on the same network uses ARP SPOOFING to forward a replacement HTML website to the VICTIM by means of an HTTP PROXY script which loads an HTML FILE which looks like the original except the bitcoin address is changed. Note that the URL remains the same as requested by the VICTIM.
 
-####Environment specifications:
+#### Environment specifications:
 ````
 Windows 10 with:
 - a virtual machine (Virtualbox)
@@ -131,12 +131,11 @@ Windows 10 with:
 			- with its own HTML webpage (UNEXPECTED HTML WITH SPOOFED PUBLIC BITCOIN ADDRESS)
 		- Wireshark (telecom packet analyzer)
 ````
-####Test Conditions:
+#### Test Conditions:
 A person wants to send bitcoin to a friends wallet address displayed on their webpage:
 Person loads friend's webpage and copies the visible bitcoin address without verifying with the person. They are trusting the website to contain trusted content.
 
-
-####Test Case:
+#### Test Case:
 ````
 Title: verifying integrity of public bitcoin wallet address on web page
 Version: 1
@@ -152,10 +151,10 @@ Steps:
 2) A web page is loaded with a visible public bitcoin wallet address.
 Expected Result: This is NOT the correct address from the database.
 ````
-####Automation of Tests:
+#### Automation of Tests:
 A Selenium Webdriver test uses Java and Cucumber/Gherkin to test if the bitcoin address has been spoofed. A combination of manual and automated processing is used: The penetration test is done at a certain moment in order to display the changes in test responses while vulnerable compared to exploited.
 
-##Test Execution
+## Test Execution
 The attack for the testing has some preparations (see separate sheet at the meshcode Github repository) but is executed with one line of code:
 bettercap -caplet web-override.cap -eval "set arp.spoof.targets 10.0.2.6"
 
@@ -164,16 +163,16 @@ bettercap -caplet web-override.cap -eval "set arp.spoof.targets 10.0.2.6"
 
 The tests are run with IntelliJ wich uses Java to execute Selenium Webdriver commands which are written in high level Cucumber/Gherkin. Find the repository on the meshcode Github account: bitcoin-address-spoofing. Run the features file, the RunCUcumberTests file or the Acceptance --> Final_Gherkin test.
 
-##After Testing
+## After Testing
 
-####Test Management
+#### Test Management
 The test documentation is organized and cataloged accordingly then published on Github in order to be reproducible.
 
-####Reports
+#### Reports
 Security decisions should always clearly be made regarding computers allowed on same network as the server. Mitigation or reduction of risk can be made by frequent automated testing in order to verify and validate critical information such as a public bitcoin wallet address. Try using HTTPS or other means of a more secure presentation of a public bitcoin address. One method of prevention is XARP, a tool designed to warn about manipulations in IP/MAC mappings.
 
 The RunCucumberTest class in the test/java folder creates an html page with a technical report which can be viewed by loading the project /target/cucumber/index.html file from within the browser.
-####Management of Defects
+#### Management of Defects
 This project is part of a junior collection of vulnerabilities which serve as a management hub to return to for future testing.
 
 
