@@ -36,9 +36,9 @@ public class D_GherkinFinal {
     //BEFORE EACH TEST (NOT FOR STEPS) - OPEN BROWSER WITH URL
     @Before
     public void Setup() throws InterruptedException {
-        // Ustawienie ścieżki do ChromeDriver
+        // validate the path to the webdriver (not necessary because the path variable is in the system)
         WebDriverManager.chromedriver().setup();
-        // Uruchom przeglądarke.
+        // turn on the browser automation (therefore browser instance)
         this.myWebDriver = new ChromeDriver();
         //new timer explicit: for each element checks every half second for max 10 seconds
         this.myWaitTimer = new WebDriverWait(this.myWebDriver, 10);
@@ -51,7 +51,7 @@ public class D_GherkinFinal {
     public void tearDown() throws InterruptedException {
         //seconds to wait before quitting after all steps complete (so that tester can see action)
         TimeUnit.SECONDS.sleep(1);
-        // Wylacz przegladarke.
+        // turn off the browser automation (therefore browser instance)
         this.myWebDriver.quit();
     }
 
