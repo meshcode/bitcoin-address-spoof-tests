@@ -11,6 +11,7 @@ This is a basic security test for bitcoin address spoofing. Java HTTP server dep
 * [Tools](#tools)
 * [Screenshots](#screenshots)
 * [Report](#report)
+* [Issues](#issues)
 
 ## Method  
 ``` 
@@ -44,6 +45,8 @@ Run automated Selenium Webdriver tests:
 ###### Acceptance and Penetration Tests
   - [Cucumber](https://cucumber.io/) - IntelliJ plugin
   - [Gherkin](https://cucumber.io/docs/gherkin/) - IntelliJ plugin
+  - [Chrome Webdriver](https://chromedriver.chromium.org/downloads) - driver for the Chrome browser
+  - [Selenium Webdriver](https://www.selenium.dev/documentation/en/) - tools and libraries for browser automation used in IntelliJ projects
   - [TravisCI](https://travis-ci.org/) - Continuous Integration
   - [Bettercap](https://www.bettercap.org/legacy/index.html#proxy-module-module) - Network attacks and monitoring in Kali Linux.
   - [Wireshark](https://www.wireshark.org/) - Packet analyzer
@@ -175,7 +178,19 @@ The RunCucumberTest class in the test/java folder creates an html page with a te
 #### Management of Defects
 This project is part of a junior collection of vulnerabilities which serve as a management hub to return to for future testing.
 
-
+# Issues
+#### Questions
+````
+- what is the relationship of Selenium Webdriver to Gherkin at runtime?
+- why doesn't this pass the build on Travic CI?
+- why doesn't @before work for steps?
+- why does my feature file only read the Gherkin_Final acceptance class?
+````
+#### Notes
+````
+- the step has to do the work. Assert checks if it is complete.
+- Run Main.class to start the server. Test with Gherkin_Final, feature file, RunCucumberTest.
+````
 
 
 
